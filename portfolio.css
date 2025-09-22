@@ -1,0 +1,400 @@
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 480px) {
+  /* Hero Section */
+  .intro {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  #intro-text, #intro-img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #intro-img img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    align-items: center; /* center instead of flex-start */
+    gap: 8px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Skills Section */
+  .lang-card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .lang-card {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .about-img, .about-text {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.3rem;
+  }
+
+  /* Footer */
+  .footup, .footdown {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footdown a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #090707;
+  padding: 10px 20px;
+  flex-wrap: nowrap; 
+  border-style:solid;
+  border-width: 2px 2px;
+  border-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  width: auto;
+}
+
+.nav-left {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px; 
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+/*@media (max-width: 600px) {
+  nav {
+    padding: 10px;
+  }
+
+  .nav-right a {
+    font-size: 0.9em;
+  }
+}*/
+
+
+.intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff, #eaeaea);
+  padding-top: 30px;
+  width: 100%;
+  background: #eaf2ff;
+  padding-bottom: 0px;
+  border-radius: 12px;
+}
+#intro-text{
+  padding-left: 30px;
+  width: 50%;
+}
+#intro-text p{
+  padding-top: 20px;
+  padding-right: 10px;
+  margin: 0%;
+}
+.intro h1{
+  margin: 5px 0;
+  line-height: 1.2;
+  
+}
+#intro-text h1 span{
+  color: blue;
+}
+ .desc {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.cta{
+  padding-bottom: 10px;
+}
+.btn{
+ display: inline-block;
+ padding: 10px 20px;
+ background: #007bff;
+ color: white;
+ text-decoration: none;
+ border-radius: 6px;
+ font-weight:normal;
+  transition: 0.3s;
+  margin-top: 20px;
+  margin-right: 20px;
+  
+}
+.link{
+  text-decoration: none;
+}
+#intro-img{
+  
+  width: 50%;
+  height: 50%;
+  padding-right: 0%;
+}
+img{
+  align-items: end;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  align-items: center;
+  border-bottom: #000000;
+  padding-bottom: 0%;
+  padding-right: 0%;
+  border-bottom: 25px;
+}
+
+
+/*-----------------------------------------------------*/
+.skills {
+   background-color: #eaeaea;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.myskills{
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0%;
+}
+.myskills p {
+    color: #555;
+    margin: 0;
+    font-weight: bold;
+}
+
+.myskills h1 {
+    margin: 5px 0 20px;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.lang-card {
+   background:#bcdcff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.lang-card img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.lang-card h1 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+}
+
+.level {
+    font-size: 0.8rem;
+    color: #3b3b3b;
+}
+
+.skill .progress {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.skill .progress-bar {
+    background-color: #0d6efd;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+    line-height: 20px;
+}
+.skill p {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  background: #f0f4ff;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #007bff;
+  font-weight: 500;
+  
+}
+
+.lang-card-container {
+   
+    display: flex;
+    gap: 20px; /* space between cards */
+    flex-wrap: wrap; /* allows cards to wrap on smaller screens */
+}
+
+/*--about.css*/
+.about{
+  background: #eaeaea;
+  display: flex;
+}
+.about-img ,.about-text{
+  width: 50%;
+  align-items: center;
+
+}
+.about-img{
+   padding-left: 80px;
+}
+.about-text{
+  padding-right: 100px;
+  margin: 100px;
+}
+.about-text p {
+  margin: 0;
+  color: #0d6efd;
+}
+
+.about-text h2 {
+  border-left: 5px solid #dc3545; 
+  text-shadow: 1px 1px 2px rgba(243, 244, 238, 1);
+}
+
+/*footer*/
+ footer {
+  padding: 20px 40px;
+  background:#88c0ff;
+  border: seashell; 
+}
+
+/* Top part of footer */
+.footup {
+  display: flex;
+  justify-content: space-between;
+  align-items:baseline;
+  flex-wrap: wrap;
+  padding: 15px 15px 15px 15px ;
+  border: dotted rgb(178, 8, 245);
+}
+
+.footup p {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  text-decoration: black;
+  
+}
+
+.footup a {
+  margin-left: 0px;
+  text-decoration: none;
+  color: #050202;
+  font-size: 14px;
+  transition: color 0.3s;
+  gap: 0%;
+}
+
+.footup a:hover {
+  color: #0073e6;
+}
+
+/* Social icons */
+.social-icons a {
+  margin-left: 15px;
+  font-size: px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0073e6;
+}
+
+/* Bottom part of footer */
+.footdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding: 15px 15px 15px 15px ;
+  border: dotted rgb(181, 4, 172);
+}
+
+#pleft {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.footdown a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footdown a:hover {
+  color: #0073e6;
+}
